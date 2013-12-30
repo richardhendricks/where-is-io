@@ -53,11 +53,11 @@ My implementation of GUST86 has the following modifications:
 extern "C" {
 #endif
 
-#define GUST86_MIRANDA   0
-#define GUST86_ARIEL     1
-#define GUST86_UMBRIEL   2
-#define GUST86_TITANIA   3
-#define GUST86_OBERON    4
+#define GUST86_MIRANDA   701
+#define GUST86_ARIEL     702
+#define GUST86_UMBRIEL   703
+#define GUST86_TITANIA   704
+#define GUST86_OBERON    705
 
 void GetGust86Coor(double jd,int body,double *xyz);
   /* Return the rectangular coordinates of the given satellite

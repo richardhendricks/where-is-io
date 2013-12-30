@@ -12,7 +12,7 @@
             >
         
 
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout 
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:stretchColumns="0,1,2"
@@ -170,6 +170,23 @@ android:src="@drawable/neptune_icon"
     style="@style/RiseSetText"
     android:text="@string/hello"
     android:id="@+id/neptune_set"
+    />
+</TableRow>
+
+<TableRow style="@style/RiseSetRow">
+<ImageView 
+android:id="@+id/pluto_icon"
+android:src="@drawable/pluto_icon" 
+/>
+<TextView 
+    style="@style/RiseSetText"
+    android:text="@string/hello"
+    android:id="@+id/pluto_rise"
+    />
+<TextView 
+    style="@style/RiseSetText"
+    android:text="@string/hello"
+    android:id="@+id/pluto_set"
     />
 </TableRow>
 </TableLayout>

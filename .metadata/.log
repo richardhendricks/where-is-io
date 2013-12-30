@@ -1,0 +1,21 @@
+!SESSION 2012-01-21 11:45:32.263 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_01
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -data C:\Users\hendric\workspace\where-is-io -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.android.ide.eclipse.ddms 4 0 2012-01-21 11:45:36.397
+!MESSAGE DDMS files not found: C:\eclipse\platform-tools\adb.exe C:\eclipse\tools\hprof-conv.exe C:\eclipse\tools\traceview.bat 
+
+!ENTRY org.eclipse.ui 4 4 2012-01-21 11:45:44.230
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2012-01-21 11:45:45.525 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_01
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -data C:\Users\hendric\workspace\where-is-io -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2012-01-21 11:45:52.651
+!MESSAGE Invalid preference page path: XML Syntax

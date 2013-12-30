@@ -36,6 +36,9 @@ void get_uranus_helio_coordsv(double jd,double xyz[3])
   {GetVsop87Coor(jd,VSOP87_URANUS,xyz);}
 void get_neptune_helio_coordsv(double jd,double xyz[3])
   {GetVsop87Coor(jd,VSOP87_NEPTUNE,xyz);}
+void get_pluto_helio_coords(double jd, double * X, double * Y, double * Z);
+void get_pluto_helio_coordsv(double jd,double xyz[3], void* unused)
+  {get_pluto_helio_coords(jd, &xyz[0], &xyz[1], &xyz[2]);}
 
 void get_mercury_helio_osculating_coords(double jd0,double jd,double xyz[3])
   {GetVsop87OsculatingCoor(jd0,jd,VSOP87_MERCURY,xyz);}

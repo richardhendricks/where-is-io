@@ -11,6 +11,8 @@
 #include <time.h>
 #include "l1.h"
 #include "tass17.h"
+#include "gust86.h"
+#include "pluto.h"
 
 #include <jni.h>
 // #include "ArrayHandler.h"
@@ -92,6 +94,16 @@ jdoubleArray Java_net_dague_astro_sim_SolarSim_neptuneCoords(JNIEnv *env, jobjec
 
     jdoubleArray answer = (*env)->NewDoubleArray(env, 3);
     (*env)->SetDoubleArrayRegion( env, answer, 0, 3, (const jdouble*) neptune );
+
+    return answer;
+}
+
+jdoubleArray Java_net_dague_astro_sim_SolarSim_plutoCoords(JNIEnv *env, jobject jobj, jdouble jd) {
+    double pluto[3];
+    get_pluto_helio_coordsv(jd, pluto);
+
+    jdoubleArray answer = (*env)->NewDoubleArray(env, 3);
+    (*env)->SetDoubleArrayRegion( env, answer, 0, 3, (const jdouble*) pluto );
 
     return answer;
 }
@@ -221,6 +233,55 @@ jdoubleArray Java_net_dague_astro_sim_SolarSim_iapetusCoords(JNIEnv *env, jobjec
     return answer;
 }
 
+jdoubleArray Java_net_dague_astro_sim_SolarSim_mirandaCoords(JNIEnv *env, jobject jobj, jdouble jd) {
+    double miranda[3];
+    get_miranda_parent_coordsv(jd, miranda);
+
+    jdoubleArray answer = (*env)->NewDoubleArray(env, 3);
+    (*env)->SetDoubleArrayRegion( env, answer, 0, 3, (const jdouble*) miranda );
+
+    return answer;
+}
+
+jdoubleArray Java_net_dague_astro_sim_SolarSim_arielCoords(JNIEnv *env, jobject jobj, jdouble jd) {
+    double ariel[3];
+    get_ariel_parent_coordsv(jd, ariel);
+
+    jdoubleArray answer = (*env)->NewDoubleArray(env, 3);
+    (*env)->SetDoubleArrayRegion( env, answer, 0, 3, (const jdouble*) ariel );
+
+    return answer;
+}
+
+jdoubleArray Java_net_dague_astro_sim_SolarSim_umbrielCoords(JNIEnv *env, jobject jobj, jdouble jd) {
+    double umbriel[3];
+    get_umbriel_parent_coordsv(jd, umbriel);
+
+    jdoubleArray answer = (*env)->NewDoubleArray(env, 3);
+    (*env)->SetDoubleArrayRegion( env, answer, 0, 3, (const jdouble*) umbriel );
+
+    return answer;
+}
+
+jdoubleArray Java_net_dague_astro_sim_SolarSim_titaniaCoords(JNIEnv *env, jobject jobj, jdouble jd) {
+    double titania[3];
+    get_titania_parent_coordsv(jd, titania);
+
+    jdoubleArray answer = (*env)->NewDoubleArray(env, 3);
+    (*env)->SetDoubleArrayRegion( env, answer, 0, 3, (const jdouble*) titania );
+
+    return answer;
+}
+
+jdoubleArray Java_net_dague_astro_sim_SolarSim_oberonCoords(JNIEnv *env, jobject jobj, jdouble jd) {
+    double oberon[3];
+    get_oberon_parent_coordsv(jd, oberon);
+
+    jdoubleArray answer = (*env)->NewDoubleArray(env, 3);
+    (*env)->SetDoubleArrayRegion( env, answer, 0, 3, (const jdouble*) oberon );
+
+    return answer;
+}
 
 jdoubleArray Java_net_dague_astro_sim_SolarSim_returnJD(JNIEnv *env, jobject jobj, jdouble jd) {
 

@@ -400,6 +400,7 @@ public class JovianThread extends Thread {
 		for (int i = 0; i < seq.length; i++) {
 			int obj = seq[i];
 			switch(obj) {
+			
 			case JovianMoons.JUPITER:
 				drawJupiterLine(c, start.jd, stop.jd);
 				break;

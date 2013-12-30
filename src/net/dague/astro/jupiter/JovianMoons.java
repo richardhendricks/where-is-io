@@ -25,16 +25,19 @@ import java.util.TreeMap;
 import java.util.Vector;
 import java.util.Map.Entry;
 
+import android.util.Log;
+
 import net.dague.astro.sim.SolarSim;
 import net.dague.astro.util.TimeUtil;
 import net.dague.astro.util.Vector3;
 
 public class JovianMoons {
-	public static final int JUPITER = 0;
-	public static final int CALLISTO = 1;
-	public static final int EUROPA = 2;
-	public static final int GANYMEDE = 3;
-	public static final int IO = 4;
+	//RAH Try to stay consistent with SolarSim enums.
+	public static final int JUPITER = 5;
+	public static final int IO = 501;
+	public static final int EUROPA = 502;
+	public static final int GANYMEDE = 503;
+	public static final int CALLISTO = 504;
 	
 	public double jd;
 	public Vector3 callisto;
@@ -62,15 +65,17 @@ public class JovianMoons {
 	
 	public int[] getZOrder()
 	{
-		int[] values = new int[5];
+		int[] values = new int[CALLISTO - IO + 2];  //RAH +1 for the math to get 4 objects, then +1 for the stealth Jupiter
 		
 		TreeMap<Double, Integer> map = new TreeMap<Double, Integer>();
-		for (int i = 0; i < 5; i++) {
+		map.put(new Double(getZ(JUPITER)), new Integer(JUPITER));  //Manually add in a Jupiter distance
+		for (int i = IO; i <= CALLISTO; i++) {
 			map.put(new Double(getZ(i)), new Integer(i));
 		}
 		
+//		Log.i("IO","Io Z distance " + getZ(IO));
 		
-		int i = 4;
+		int i = CALLISTO - IO + 1;  //+1 for Jupiter
 		for(Entry<Double, Integer> entry : map.entrySet()) {
 			  Integer value = entry.getValue();
 			  values[i] = value.intValue();

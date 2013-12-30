@@ -4,7 +4,7 @@
 	<color name="jovian_graph_background">#ff000000</color>
 <color name="io">#ffffff00</color>
 <color name="ganymede">#ff0000ff</color>
-<color name="europa">#ff00ff00</color>
+<color name="europa">#ffffffff</color>
 <color name="callisto">#ffff0000</color>
 <color name="jupiter">#cc444444</color>
 <color name="nowline">#ffffaa00</color>

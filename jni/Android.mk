@@ -37,6 +37,7 @@ LOCAL_SRC_FILES := \
 	stellplanet.c \
 	tass17.c \
 	vsop87.c \
+	pluto.c \
 	export.c 
 
 

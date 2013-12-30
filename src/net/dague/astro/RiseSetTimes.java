@@ -84,6 +84,8 @@ public class RiseSetTimes extends Activity implements OnClickListener {
         fillRiseTime(R.id.neptune_rise, SolarSim.NEPTUNE, now);
         fillSetTime(R.id.neptune_set, SolarSim.NEPTUNE, now);
 
+        fillRiseTime(R.id.pluto_rise, SolarSim.PLUTO, now);
+        fillSetTime(R.id.pluto_set, SolarSim.PLUTO, now); 
         
                 // Set up click listeners for all the buttons
 //        View continueButton = findViewById(R.id.continue_button);

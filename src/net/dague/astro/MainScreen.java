@@ -25,6 +25,10 @@ public class MainScreen extends Activity implements OnClickListener  {
 		Button jupiter = (Button)findViewById(R.id.jupiter_button);
 		jupiter.setClickable(true);
 		jupiter.setOnClickListener(this);
+
+		Button jupiter2D = (Button)findViewById(R.id.jupiter_2D_button);
+		jupiter2D.setClickable(true);
+		jupiter2D.setOnClickListener(this);
 		
 		Button about = (Button)findViewById(R.id.about_button);
 		about.setClickable(true);
@@ -37,14 +41,18 @@ public class MainScreen extends Activity implements OnClickListener  {
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
-		case R.id.jupiter_button:
-		   Intent i = new Intent(this, JovianSpiral.class);
-		   startActivity(i);
-		   break;
 		case R.id.time_button:
-			Intent i1 = new Intent(this, RiseSetTimes.class);
-			startActivity(i1);
+			Intent it = new Intent(this, RiseSetTimes.class);
+			startActivity(it);
 			break;
+		case R.id.jupiter_button:
+		   Intent ij = new Intent(this, JovianSpiral.class);
+		   startActivity(ij);
+		   break;
+		case R.id.jupiter_2D_button:
+		   Intent ij2d = new Intent(this, Jovian2D.class);
+		   startActivity(ij2d);
+		   break;
 		case R.id.about_button:
 			startActivity(new Intent(this, About.class));
 			break;

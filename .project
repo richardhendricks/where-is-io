@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Where is Io</name>
+	<name>WhereIsIo</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -40,4 +40,26 @@
 		<nature>com.android.ide.eclipse.adt.AndroidNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>libs</name>
+			<type>2</type>
+			<location>C:/Users/hendric/workspace/WhereIsIo/libs</location>
+		</link>
+		<link>
+			<name>base_images/Pluto-NASA.jpg</name>
+			<type>1</type>
+			<location>C:/Users/hendric/workspace/WhereIsIo/base_images/Pluto-NASA.jpg</location>
+		</link>
+		<link>
+			<name>base_images/Pluto-NASA.png</name>
+			<type>1</type>
+			<location>C:/Users/hendric/workspace/WhereIsIo/base_images/Pluto-NASA.png</location>
+		</link>
+		<link>
+			<name>res/drawable/pluto_icon.png</name>
+			<type>1</type>
+			<location>C:/Users/hendric/workspace/WhereIsIo/res/drawable/pluto_icon.png</location>
+		</link>
+	</linkedResources>
 </projectDescription>

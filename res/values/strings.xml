@@ -5,15 +5,14 @@
     <string name="delete_label">Reset Cache</string>
     <string name="delete_shortcut">D</string>
     <string name="close_label">Close</string>
-    <string name="spiral_title">Jovian Spiral</string>
+    <string name="jovian_spiral_title">Jovian Spiral</string>
     <string name="riseset_title">Rise and Set times</string>
-    <string name="jupiter_text">Jupiter Moon Positions</string>
+    <string name="jupiter_text">Jovian Waterfall</string>
     <string name="time_text">Rise and Set Times</string>
     <string name="about_label">About...</string>
     <string name="about_shortcut">A</string>
-    <string name="about_title">About Where is Io - version 2.1</string>
-    <string name="about_text">
-Where is Io is tool for showing the positions of objects in the Solar System.
+    <string name="about_title">About Where is Io - version 2.2</string>
+    <string name="about_text">Where is Io is tool for showing the positions of objects in the Solar System.
 It uses your location to determine the rise and set times of the planets
 (and soon the moon) as well as the position of the 4 large moons of Jupiter.
 \n\n
@@ -31,7 +30,7 @@ over time.  Even through only 8x binoculars you can make out these
 The portrait view shows a 4 day window of time, with the orange line 
 representing the current state.  In landscape view, you get a close up on
 the first portion of the graph (total time will vary based on the aspect
-ratio of your device).  Jupiter\'s size is slightly exagerated (2x) for aesthetics.\n
+ratio of your device).  Jupiter\'s size is slightly exaggerated (2x) for aesthetics.\n
 This is a work in progress, expect to see additional functions rolled out
 over time.\n\n
 <b>License / Copyright</b>\n\n
@@ -68,9 +67,9 @@ in all copies or substantial portions of the Software.
 \n\
 Jupiter is the 5th planet from the Sun, and the largest in our solar system.
 The 4 largest moons of Jupiter were discovered by Galileo Galilei in 1610, 
-and are hence named the Galilean Satelites.\n
+and are hence named the Galilean Satellites.\n
 \n\
-The Galilean satelites can be seen with a typical set of 8 power field binoculars.
+The Galilean satellites can be seen with a typical set of 8 power field binoculars.
 They will show up in a distinct line of points on either side of the clearly round
 Jupiter.
 \n\
@@ -83,7 +82,7 @@ Learn more at: http://en.wikipedia.org/wiki/Jupiter
 \n\
 Io is the inner most moon of Jupiter.  It is also the most geologically
 active object in the entire Solar system due to the gravitational flexing
-from Jupiter and the other Galilean Satelites.  Io has volcanos that produce
+from Jupiter and the other Galilean Satellites.  Io has volcanos that produce
 plumes of sulfur up to 500 km (310 mi) above the surface.  This is higher
 than the orbit of the International Space Station.\n
 \n\
@@ -107,8 +106,8 @@ Learn more at: http://en.wikipedia.org/wiki/Europa_%28moon%29
 <b>Mass:</b> 0.025 Earths\n\
 <b>Gravity:</b> 0.146 g\n
 \n\
-Ganymede is the third Galliean satelite, and the 7th moon of Jupiter.  It is
-the largest satelite of any planet in our Solar System.  Ganymede is known to
+Ganymede is the third Galliean satellite, and the 7th moon of Jupiter.  It is
+the largest satellite of any planet in our Solar System.  Ganymede is known to
 have both a salt water ocean, and is the only moon in the Solar System to have
 generate it\'s own magnetic field.\n
 \n\
@@ -119,7 +118,7 @@ Learn more at: http://en.wikipedia.org/wiki/Ganymede_%28moon%29
 <b>Mass:</b> 0.018 Earths\n\
 <b>Gravity:</b> 0.126 g\n
 \n\
-Callisto is the outer most of the Galliean satelites.  While smaller than Ganymede
+Callisto is the outer most of the Galliean satellites.  While smaller than Ganymede
 it is still nearly the size of the planet Mercury.  Like our moon, Callisto is tidally
 locked to it\'s planet, so the same side always faces Jupiter.  Because of Callisto\'s 
 distance from Jupiter it has relatively low radiation levels compared to the inner moons,
@@ -128,4 +127,7 @@ system.\n
 \n\
 Learn more at: http://en.wikipedia.org/wiki/Callisto_%28moon%29
 </string>
+<string name="moon_system_2d">Telescope view</string>
+<string name="saturn_text">Saturnian Waterfall</string>
+<string name="jovian_2d_title">Jovian 2D view</string>
 </resources>

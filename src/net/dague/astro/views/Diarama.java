@@ -41,11 +41,10 @@ public class Diarama extends View {
 	
 
 	private double[] getGPS() {  
-
 		LocationManager lm = (LocationManager) (getContext().getSystemService(Context.LOCATION_SERVICE));    
 		List<String> providers = lm.getProviders(true);
 		
-		/* Loop over the array backwards, and if you get an accurate location, then break out the loop*/  
+		// Loop over the array backwards, and if you get an accurate location, then break out the loop  
 		Location l = null;  
 		Log.i("GPS", "Numer of providers: " + providers.size());
   
@@ -63,6 +62,7 @@ public class Diarama extends View {
 		}  
 		Log.i("GPS", "Lat: " + gps[0] + ", Lon: " + gps[1]);
 		return gps;  
+		
 	}
 	
 	protected void paintRise(Canvas c, int body) {
@@ -71,7 +71,9 @@ public class Diarama extends View {
 	}
 	
 	protected void onDraw(Canvas c) {
-		
+		return;
+/////RAH Comment out diarama while debugging layout
+/*
 		double gps[] = getGPS();
 		rs = new RiseCalculator(gps[0], gps[1]);
 		
@@ -120,7 +122,7 @@ public class Diarama extends View {
 		// c.drawCircle(w/2, h/2, h/4, p);
 		// c.drawBitmap(sunBitmap, src, dst, p);
 		c.drawArc(r, 180, 180, false, p);
-		
+*/		
 
 	}
 
